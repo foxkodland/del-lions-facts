@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body{
+            margin: 0;
+            min-width: 100%;
+            min-height: 100vh;
+            background-image: url('львы.jpg');
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .fact{
+            width: 1000px;
+            background-color: rgba(250, 235, 215,0.8);
+            border-radius: 45px;
+            padding: 30px 50px;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fact">
+        <h1>Факт о львах</h1>
+        <p class="text"></p>
+    </div>
+
+    <script>
+        m = [
+    'В день самка льва съедает до 5 кг. мяса, а самец до 7 кг.',
+'Рычание льва слышно на расстоянии до 8 км',
+'Львы — одни из самых ленивых животных. На сон у них уходит до 20 часов в день',
+'Львы могут разгоняться до 80 км/ч, но поддерживать эту скорость долго они не могут. В длину львы способны прыгать на 11 м.',
+'Львы живут прайдами до 15 особей. Основной обязанностью самцов является защита территории, в то время как самки заботятся о потомстве и охотятся. При этом самцы первыми утоляют голод после удачной охоты.'
+]
+
+document.querySelector('.text').innerHTML = m[Math.floor(Math.random() * m.length)]
+
+    </script>
+</body>
+</html>
